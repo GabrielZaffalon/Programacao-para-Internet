@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="petshop, pet, shop" />
+        <meta name="author" content="Gabriel Zaffalon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" type="imagex/png" href="./img/icon.ico" />
+        <link rel="stylesheet" href="stayles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+            integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+            crossorigin="anonymous"
+        />
+        <title>Zaffa's Pet</title>
+    </head>
+    <body>
+        <header>
+            <div class="upper-header">
+                <nav>
+                    <div class="logo">
+                        <img src="./img/logo.png" alt="logo" id="log-site" />
+                    </div>
+                    <div class="openMenu"><i class="fa fa-bars"></i></div>
+                    <ul class="mainMenu">
+                        <li><a href="#">GALERIA</a></li>
+                        <li><a href="#">CONTATO</a></li>
+                        <li><a href="#">PESSOAL</a></li>
+                        <div class="closeMenu">
+                            <i class="fa fa-times"></i>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+            <div class="lower-header">
+                <img src="./img/background.png" alt="background-img" />
+                <div class="text">
+                    <h1>ZAFFA'S pet</h1>
+                    <p>consectetur adipiscing elit. Proin nec lacus sem.</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <img src="./img/dog_1.png" alt="dog-1" />
+            <img src="./img/cat_1.png" alt="cat-1" />
+            <img src="./img/dog_2.png" alt="dog-2" />
+            <img src="./img/cat_2.png" alt="cat-2" />
+            <img src="./img/dog_3.png" alt="dog-3" />
+            <img src="./img/cat_3.png" alt="dog-3" />
+        </main>
+        <section class="form-section">
+            <form
+                action="POST"
+                src="https://otterwise-fake-api.herokuapp.com/contact"
+            >
+                <label for="name">Nome completo</label>
+                <input type="text" name="name" id="name" />
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" />
+                <label for="phone">Telefone</label>
+                <input type="number" name="phone" id="phone" />
+                <label for="message">Mensagem</label>
+                <input type="text" name="message" id="message" />
+                <button>ENVIAR</button>
+            </form>
+        </section>
+        <footer>
+            <p>Direitos Reservados @GabrielZaffalon. agosto/2021</p>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>

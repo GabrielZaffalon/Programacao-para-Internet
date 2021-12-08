@@ -1,0 +1,287 @@
+/* RESET */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h,
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+
+nav {
+    background: #040404;
+    color: #bf9d69;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    height: 68px;
+    width: 68px;
+}
+
+nav .mainMenu .logo {
+    align-items: center;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffd18d;
+    font-size: 12px;
+}
+
+ul {
+    align-items: center;
+}
+
+nav .mainMenu li a:hover {
+    font-size: 15px;
+}
+
+nav .openMenu {
+    font-size: 1.5rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    justify-content: center;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    justify-content: center;
+}
+
+nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.lower-header {
+    display: flex;
+    flex-direction: row;
+    background-color: #040404;
+    color: #e6bc7e;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lower-header .text {
+    margin: 15px;
+}
+
+.lower-header h1 {
+    font-size: 46px;
+}
+
+.lower-header p {
+    font-size: 18px;
+}
+
+.lower-header img {
+    height: 300px;
+    width: 500px;
+}
+
+/* MAIN */
+
+main img {
+    margin: 90px;
+    border-radius: 10px;
+    height: 350px;
+    width: 350px;
+}
+
+main {
+    background-color: #e6bc7e;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+}
+
+/* SECTION */
+
+.form-section {
+    background: #403423;
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 36px;
+    width: 33%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+input,
+button {
+    height: 30px;
+    width: 280px;
+    border-radius: 10px;
+    margin: 5px;
+    border-color: black;
+}
+
+#message {
+    height: 80px;
+    width: 280px;
+}
+
+label {
+    color: #403423;
+    font-weight: bold;
+    margin-top: 3px;
+    pad: start;
+}
+
+button {
+    background: #bf9d69;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #403423;
+}
+
+input:hover {
+    border-color: #ffd18d;
+}
+
+input {
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #e6bc7e;
+    color: #403423;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 80px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 870px) {
+    /* HEADER */
+
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav img {
+        height: 53px;
+        width: 53px;
+        position: absolute;
+        z-index: 11;
+        margin-left: -15px;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        justify-content: space-between;
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a {
+        background: none;
+        font-size: 36px;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        font-size: 40px;
+    }
+
+    .lower-header img {
+        height: 0;
+        width: 0;
+        height: 15%;
+    }
+
+    .lower-header {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lower-header h1 {
+        align-self: center;
+    }
+
+    /* MAIN */
+
+    main {
+        flex-flow: wrap column-reverse;
+        justify-content: center;
+        align-content: center;
+        background: #bf9d69;
+    }
+
+    main img {
+        height: 250px;
+        width: 250px;
+    }
+
+    /* SECTION */
+
+    section {
+        background-color: #403423;
+    }
+
+    form {
+        height: 330px;
+        width: 427px;
+    }
+
+    button {
+        height: 50px;
+    }
+}
